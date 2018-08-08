@@ -1,6 +1,10 @@
 {
   "name": "flicker",
   "private": true,
+  "scripts": {
+    "start": "webpack --mode=development --watch",
+    "product": "webpack --mode=production --watch"
+  },
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
