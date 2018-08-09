@@ -1,3 +1,10 @@
+<% if logged_in? %>
+  <script id="bootstrap-current-user" type="text/javascript">
+  	window.currentUser = <%= render("api/users/user.json.jbuilder",
+  		user: current_user).html_safe %>
+  </script>
+<% end %>
+
 <main id="root">
   <div>
     <img class="center" src="https://i.giphy.com/media/z9AUvhAEiXOqA/giphy.webp" height=75% width=75% alt="this is fine" />
