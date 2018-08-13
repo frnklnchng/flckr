@@ -2,8 +2,7 @@
   "name": "flicker",
   "private": true,
   "scripts": {
-    "start": "webpack --mode=development --watch",
-    "product": "webpack --mode=production --watch"
+    "postinstall": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -21,5 +20,9 @@
     "redux-thunk": "^2.3.0",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0"
+  },
+  "engines": {
+    "node": "10.8.0",
+    "npm": "6.3.0"
   }
 }
