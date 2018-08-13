@@ -40,7 +40,7 @@ class Splash extends React.Component {
       <div className="splash">
         <div className="splash-nav">
           <Link to="/">
-            <h2 className="splash-logo">flicker</h2>
+            <h2 className="splash-logo">flckr</h2>
           </Link>
           <div className="splash-auth">
             <button className="splash-login" onClick={this.openModal('login')}>Log In</button>

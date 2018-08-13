@@ -1,7 +1,8 @@
 {
-  "name": "flicker",
+  "name": "flckr",
   "private": true,
   "scripts": {
+    "start": "webpack --mode=development --watch",
     "postinstall": "webpack"
   },
   "dependencies": {

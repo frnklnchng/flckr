@@ -13,7 +13,7 @@ const Greeting = ({ currentUser, logout }) => {
   const userGreeting = () => (
     <div className="nav">
       <Link to="/">
-        <div className="nav-logo">flicker</div>
+        <div className="nav-logo">flckr</div>
       </Link>
       <div className="nav-greeting">
         <span className="nav-name">
