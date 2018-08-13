@@ -1,0 +1,73 @@
+.splash {
+  background: 
+    /* url("https://www.awn.com/sites/default/files/styles/original/public/image/featured/1020858-iln-creates-visuals-porter-robinsons-worlds-tour.jpg"); */
+    /* url("https://i.ytimg.com/vi/nxtVBIXvHEo/maxresdefault.jpg"); */
+    /* url("https://78.media.tumblr.com/294d4fe58c77e1cae0f072c19952e854/tumblr_nvyqa8DdFK1s3d2fuo8_1280.jpg"); */
+    /* url("https://cdna.artstation.com/p/assets/images/images/006/145/220/large/artur-sadlos-future-tokyo-003-wip004i.jpg?1496344976"); */
+    /* url("https://cdnb.artstation.com/p/assets/images/images/012/298/143/large/alena-aenami-cold-1k.jpg?1534082874"); */
+    url("https://cdna.artstation.com/p/assets/images/images/006/426/268/large/alena-aenami-004-1k1.jpg?1498508101");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.splash-nav {
+  display: flex;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.splash-login {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  right: 24px;
+  text-align: right;
+  position: relative;
+  padding: 4px 20px 4px 20px;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.splash-signup {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  font-weight: bolder;
+  right: 25px;
+  text-align: right;
+  position: relative;
+  padding: 4px 20px 4px 20px;
+  background: white;
+  border: 2px solid white;
+  color: black;
+}
+
+.splash-signup:hover {
+  color: #c0c0c0;
+}
+
+.splash-logo {
+  font: normal 28px 'Montserrat', sans-serif;
+  font-weight: bolder;
+  display: inline-block;
+  position: relative;
+  color: white;
+  left: 24px;
+}
+
+.splash-title {
+  font: normal 30px 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,0);
+  position: absolute;
+}

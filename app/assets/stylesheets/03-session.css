@@ -1,0 +1,99 @@
+.login-form-container {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  top: 10px;
+}
+
+.errors {
+  color: yellow;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.errorsList {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.submit-bttn {
+  margin-top: 12px;
+  background: white;
+  height: 32px;
+  width: 100px;
+  color: black;
+  font: normal 16px 'Proxima Nova', sans-serif;
+  font-weight: bolder;
+}
+
+.submit-bttn:hover {
+  color: #c0c0c0;
+}
+
+.demo-bttn {
+  background: none;
+  border: none;
+  height: 42px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+  font: normal 16px 'Proxima Nova', sans-serif;
+}
+
+.login-username {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.login-password {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.login-firstname {
+  padding-top: 12px;
+  font: normal 16px 'Proxima Nova', sans-serif;
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.login-lastname {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.login-email {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.session-form-ending-tag {
+  padding-top: 12px;
+}
+
+.login-signup {
+  float: right;
+}

@@ -8,8 +8,10 @@ const msp = ({ session, entities: { users } }) => {
   };
 };
 
-const mdp = (dispatch) => ({
-  logout: () => dispatch(logout())
-});
+const mdp = (dispatch) => {
+  return {
+    logout: () => dispatch(logout())
+  }
+};
 
 export default connect(msp, mdp)(Greeting);

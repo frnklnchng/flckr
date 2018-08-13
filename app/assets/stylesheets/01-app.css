@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  background: transparent;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+a:link {
+    color: #128fdc;
+}
+
+a:visited {
+    color: #128fdc;
+}
+
+button {
+  border-radius: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

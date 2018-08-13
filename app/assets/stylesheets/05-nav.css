@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  position: relative;
+  background-color: #212124;
+  justify-content: space-between;
+  align-items: center;
+  top:0;
+  left:0;
+  right:0;
+  height: 48px;
+}
+
+.nav-logo {
+  display: inline-block;
+  font: normal 28px 'Montserrat', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  left: 24px;
+}
+
+.nav-name {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  right: 24px;
+  text-align: right;
+  position: relative;
+  padding: 4px 16px 4px 16px;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.nav-signout {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  font-weight: bolder;
+  right: 24px;
+  text-align: right;
+  position: relative;
+  padding: 4px 16px 4px 16px;
+  background: white;
+  border: 2px solid white;
+  color: black;
+}
+
+.nav-signout:hover {
+  color: #c0c0c0;
+}
+
