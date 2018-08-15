@@ -39,7 +39,7 @@
 
 .splash-signup {
   font: normal 16px 'Proxima Nova', sans-serif;
-  font-weight: bolder;
+  font-weight: bold;
   right: 25px;
   text-align: right;
   position: relative;
@@ -63,7 +63,7 @@
 }
 
 .splash-title {
-  font: normal 30px 'Montserrat', sans-serif;
+  font: normal 30px 'Proxima Nova', sans-serif;
   text-align: center;
   color: white;
   top: 45%;

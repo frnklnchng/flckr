@@ -1,13 +1,15 @@
 .nav {
   display: flex;
-  position: relative;
-  background-color: #212124;
+  /* position: relative; */
+  position: fixed;
+  background-color: rgba(33, 33, 36, 0.975);
   justify-content: space-between;
   align-items: center;
   top:0;
   left:0;
   right:0;
-  height: 48px;
+  height: 50px;
+  z-index: 1;
 }
 
 .nav-logo {
@@ -17,12 +19,12 @@
   text-decoration: none;
   position: relative;
   color: white;
-  left: 24px;
+  left: 100px;
 }
 
 .nav-name {
   font: normal 16px 'Proxima Nova', sans-serif;
-  right: 24px;
+  right: 100px;
   text-align: right;
   position: relative;
   padding: 4px 16px 4px 16px;
@@ -33,8 +35,8 @@
 
 .nav-signout {
   font: normal 16px 'Proxima Nova', sans-serif;
-  font-weight: bolder;
-  right: 24px;
+  font-weight: bold;
+  right: 100px;
   text-align: right;
   position: relative;
   padding: 4px 16px 4px 16px;
