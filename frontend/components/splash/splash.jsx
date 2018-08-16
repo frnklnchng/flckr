@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import ReactModal from 'react-modal';
 import SessionFormContainer from '../session_form/session_form_container';
 // import { receiveErrors } from '../../actions/session_actions';
-import { connect } from 'react-redux';
 
 class Splash extends React.Component {
   constructor(props) {
@@ -48,11 +47,11 @@ class Splash extends React.Component {
           </div>
         </div>
 
-        <ReactModal className="Modal"
+        <ReactModal className="auth-modal"
           isOpen={this.state.showModal}
           contentLabel="UserAuth modal"
           onRequestClose={this.closeModal}
-          overlayClassName="Overlay">
+          overlayClassName="auth-modal-overlay">
           <SessionFormContainer location={this.props.location}/>
         </ReactModal>
 

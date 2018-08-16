@@ -4,7 +4,7 @@ import PhotoIndex from './photo_index';
 
 const msp = (state) => {
   return {
-    photos: Object.values(state.entities.photos)
+    photos: Object.values(state.entities.photos),
   };
 };
 

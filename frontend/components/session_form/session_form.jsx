@@ -43,9 +43,9 @@ class SessionForm extends React.Component {
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClick, false);
 
-    if (this.props.errors && this.props.errors.length) {
-      this.props.clearErrors();
-    }
+    // if (this.props.errors && this.props.errors.length) {
+    //   this.props.clearErrors();
+    // }
   }
 
   handleClick(e) {
@@ -62,7 +62,7 @@ class SessionForm extends React.Component {
     });
 
     return (
-      <ul className="errorsList">
+      <ul className="errors-list">
         { errors }
       </ul>
     );

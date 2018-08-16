@@ -28,7 +28,7 @@
 
 .splash-login {
   font: normal 16px 'Proxima Nova', sans-serif;
-  right: 24px;
+  right: 28px;
   text-align: right;
   position: relative;
   padding: 4px 20px 4px 20px;
@@ -68,6 +68,6 @@
   color: white;
   top: 45%;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   position: absolute;
 }

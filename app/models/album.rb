@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: photos
+# Table name: albums
 #
 #  id          :bigint(8)        not null, primary key
 #  title       :string           not null
@@ -10,15 +10,12 @@
 #  updated_at  :datetime         not null
 #
 
-class Photo < ApplicationRecord
+class Album < ApplicationRecord
   validates :title, :user_id, presence: true
-  validate :ensure_file
 
-  has_one_attached :file
   belongs_to :user
-  has_many :album_photos, dependent: :destroy, inverse_of: :photo
-
-  def ensure_file
-    errors[:file] << "Image required." unless self.file.attached?
-  end
+  has_many :album_photos, dependent: :destroy
+  has_many :photos,
+    through: :album_photos,
+    source: :photo
 end

@@ -1,17 +1,18 @@
 import React from 'react';
 import PhotoIndexItem from './photo_index_item'
+import { withRouter } from 'react-router-dom';
+
 
 class PhotoIndex extends React.Component {
-
   componentDidMount() {
     this.props.fetchPhotos();
   }
 
   render() {
-    let items = null;
+    let items;
 
     if (this.props.photos) {
-      items = this.props.photos.map(photo => {
+      items = this.props.photos.reverse().map(photo => {
         return <PhotoIndexItem key={photo.id} photo={ photo }/>
       });
     }
@@ -24,4 +25,4 @@ class PhotoIndex extends React.Component {
   }
 }
 
-export default PhotoIndex;
+export default withRouter(PhotoIndex);

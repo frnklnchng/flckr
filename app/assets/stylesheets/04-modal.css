@@ -1,4 +1,4 @@
-.Modal {
+.auth-modal {
   width: 400px;
   padding: 30px;
   border-radius: 5px;
@@ -11,7 +11,7 @@
   transform: translate(-50%, -50%);
 }
 
-.Overlay {
+.auth-modal-overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   top: 0;

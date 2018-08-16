@@ -1,0 +1,87 @@
+.upload-background {
+  position: fixed;
+  background-color: rgb(33, 33, 36);
+  height: 100%;
+  width: 100%;
+}
+
+.upload-container {
+  position: absolute;
+  top: 42.5%;
+  left: 50%;
+  transform: translate(-50%, -42.5%);
+  padding-top: 52px;
+  margin-bottom: 52px;
+}
+
+.upload-header {
+  font: normal 32px 'Proxima Nova', sans-serif;
+  color: white;
+  padding-bottom: 16px;
+}
+
+.upload-preview {
+  max-height: 480px;
+  max-width: 960px;
+}
+
+.upload-name {
+  font: normal 24px 'Proxima Nova', sans-serif;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.upload-title {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  border-style: inset;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.upload-description {
+  font: normal 16px 'Proxima Nova', sans-serif;
+  width: 100%;
+  height: 72px;
+  border-radius: 3px;
+  border-style: inset;
+  margin-top: 5px;
+  padding: 3px;
+  resize: none;
+}
+
+.upload-bttns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.upload-file {
+  margin-top: 12px;
+  padding: 4px 16px 4px 16px;
+  background-color: rgb(33, 33, 36);
+  height: 32px;
+  width: 100px;
+  color: white;
+  font: normal 16px 'Proxima Nova', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-submit-bttn {
+  margin-top: 12px;
+  background: white;
+  height: 32px;
+  width: 100px;
+  color: black;
+  font: normal 16px 'Proxima Nova', sans-serif;
+  font-weight: bold;
+  justify-content: right;
+}
