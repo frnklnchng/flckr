@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class UploadForm extends React.Component {
   constructor(props) {
@@ -68,6 +68,7 @@ class UploadForm extends React.Component {
       <div className="upload">
         <div className="upload-background"></div>
         <div className="upload-container">
+          <Link to="/home"><img className="upload-back" src="https://i.imgur.com/NGOSiIP.png" /></Link>
           <form className="upload-form">
             <p className="upload-header">Upload</p>
             <img className="upload-preview" src={this.state.photoUrl} />

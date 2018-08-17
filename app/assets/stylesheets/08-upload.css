@@ -21,6 +21,14 @@
   animation-duration: 0.3s;
 }
 
+.upload-back {
+  position: relative;
+  right: 60px;
+  top: 48px;
+  height: 48px;
+  width: 48px;
+}
+
 .upload-header {
   font: normal 32px 'Montserrat', sans-serif;
   color: white;
