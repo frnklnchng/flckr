@@ -54,11 +54,11 @@ class PhotoShow extends React.Component {
   }
 
   handleUpdate(photo) {
-    this.props.updatePhoto(photo).then(this.closeModal());
+    this.props.updatePhoto(photo).then(() => this.closeModal());
   }
 
   handleDelete(id) {
-    this.props.deletePhoto(id).then(this.props.history.push("/home"));
+    this.props.deletePhoto(id).then(() => this.props.history.push("/home"));
   }
 
   render() {
@@ -83,7 +83,7 @@ class PhotoShow extends React.Component {
 
     const photoEditForm = () => {
       return (
-        <form>
+        <form onSubmit={() => this.handleUpdate(this.state.formContent)}>
           <input className="show-edit-title"
             type="text"
             placeholder="Title"
@@ -96,7 +96,7 @@ class PhotoShow extends React.Component {
             value={this.state.formContent.description}
             onChange={this.update('description')}
           />
-          <button className="show-submit-edit-bttn" onClick={() => this.handleUpdate(this.state.formContent)}>Update</button>
+          <button type="submit" className="show-submit-edit-bttn">Update</button>
         </form>
       );
     };
