@@ -6,13 +6,7 @@ import PhotoShowContainer from './photos/photo_show_container';
 import UploadFormContainer from './upload/upload_form_container';
 // import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
-import {
-  Route,
-  Redirect,
-  Switch,
-  Link,
-  HashRouter
-} from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
 const App = () => (
   <div>

@@ -56,7 +56,7 @@ class Splash extends React.Component {
         </ReactModal>
 
         <div className="splash-quote">
-          <p className="splash-quote-header">Find your <text className="splash-insp">inspiration</text>.</p>
+          <p className="splash-quote-header">Find your <span className="splash-insp">inspiration</span>.</p>
           <p>What we see depends mainly on what we look for.</p>
           <p>Join the Flckr community.</p>
           <button className="splash-quote-signup" onClick={this.openModal('signup')}>Sign Up</button>

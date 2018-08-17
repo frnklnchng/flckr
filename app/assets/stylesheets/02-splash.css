@@ -65,12 +65,16 @@
 }
 
 .splash-logo:hover {
-    animation: flicker 0.75s infinite alternate;
+  animation: flicker 0.75s infinite alternate;
 }
 
-/* .splash-insp {
-    animation: rainbow 10s infinite ease;
-} */
+.splash-insp {
+  transition: all 0.75s ease;
+}
+
+.splash-insp:hover {
+  text-shadow: 0 0 30px white;
+}
 
 .splash-quote {
   font: normal 28px 'Open Sans', sans-serif;
@@ -94,4 +98,8 @@
   border: 2px solid white;
   color: black;
   margin-top: 12px;
+}
+
+.splash-quote-signup:hover {
+  color: #c0c0c0;
 }

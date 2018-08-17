@@ -72,3 +72,8 @@ nav ul {
 	87.5% { color: #dd00f3; }
 	100% { color: #f30000; }
 }
+
+@keyframes iconOpacity {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}

@@ -2,7 +2,8 @@
   margin-top: 52px;
   margin-left: 120px;
   margin-right: 120px;
-  column-gap: 120px;
+  /* column-gap: 120px; */
+  column-gap: 52px;
   margin-bottom: 52px;
 
   -webkit-column-count: 3;
@@ -15,18 +16,19 @@
 }
 
 .photo-index-item {
-  /* position: relative; */
+  position: relative;
   display: inline-block;
   width: 100%;
   animation-name: fadeIn;
   animation-duration: 0.5s;
+  margin-top: 52px;
 }
 
 .photo-index-img {
   width: 100%;
 }
 
-.piii-header {
+/* .piii-header {
   background: white;
   color: black;
   border-top-left-radius: 5px;
@@ -46,4 +48,40 @@
 
 .piii-header a:hover {
   text-decoration-line: underline;
+} */
+
+.piii-header {
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.1); */
+  /* text-align: center; */
+  /* width: 100%; */
+  bottom: 0;
+  left: 5%;
+  margin-bottom: 24px;
+  font-size: 16px;
+  /* font-weight: bold; */
+  /* padding: 24px; */
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.piii-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.photo-index-item:hover .piii-header {
+  opacity: 1;
+}
+
+.piii-header a:hover {
+  text-decoration-line: underline;
+}
+
+.piii-header-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }

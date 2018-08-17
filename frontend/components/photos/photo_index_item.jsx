@@ -7,12 +7,14 @@ class PhotoIndexItem extends React.Component {
 
     return (
       <div className="photo-index-item">
-        <div className="piii-header">
-          <div>{photo.title} by <Link to={`/users/${photo.user.id}`}>{photo.user.username}</Link></div>
-        </div>
         <Link to={`/photos/${photo.id}`}>
           <img className="photo-index-img" src={photo.file} />
         </Link>
+        <div className="piii-header">
+          <div className="piii-header-title">{photo.title}</div>
+          by&nbsp;
+          <Link to={`/users/${photo.user.id}`}>{photo.user.username}</Link>
+        </div>
       </div>
     );
   }

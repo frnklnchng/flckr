@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactModal from 'react-modal';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class PhotoShow extends React.Component {
   constructor(props) {
@@ -69,16 +69,17 @@ class PhotoShow extends React.Component {
       // return <div>Loading</div>;
     }
 
-    let modify;
-
-    if (this.props.currentUserId === photo.user_id) {
-      modify = (
-        <div className="modify-bttns">
-          <button className="show-edit-bttn" onClick={this.openModal}>Edit</button>
-          <button className="show-delete-bttn" onClick={() => this.handleDelete(photo.id)}>Delete</button>
-        </div>
-      );
-    }
+    const date = new Date(photo.created_at);
+    const month = date.getMonth();
+    const day = date.getDate();
+    const year = date.getFullYear();
+    const months = ["January", "February",
+                        "March", "April",
+                        "May", "June",
+                        "July", "August",
+                        "September", "October",
+                        "November", "December"];
+    let modifyButtons;
 
     const photoEditForm = () => {
       return (
@@ -112,19 +113,34 @@ class PhotoShow extends React.Component {
       );
     };
 
+    if (this.props.currentUserId === photo.user_id) {
+      modifyButtons = (
+        <div className="modify-bttns">
+          <button className="show-edit-bttn" onClick={this.openModal}>Edit</button>
+          <button className="show-delete-bttn" onClick={() => this.handleDelete(photo.id)}>Delete</button>
+        </div>
+      );
+    }
+
     return (
       <div className="show">
+        <Link to="/home"><img className="show-back" src="https://i.imgur.com/NGOSiIP.png"/></Link>
         <div className="show-media">
           <img className="show-photo" src={`${photo.file}`} />
         </div>
         <div className="show-bottom">
           <div>
             <p className="show-title">{photo.title}</p>
+            <Link to={`/users/${photo.user.id}`} className="show-user">
+              <p className="show-user">{photo.user.first_name} {photo.user.last_name}</p>
+            </Link>
+            {/* <p className="show-user">{photo.user.first_name} {photo.user.last_name}</p> */}
+            <p className="show-created"> {day} {months[month]} {year}</p>
             <p className="show-description">{photo.description}</p>
             {photoEditModal()}
             <hr />
           </div>
-          <div>{modify}</div>
+          <div>{modifyButtons}</div>
         </div>
       </div>
     );

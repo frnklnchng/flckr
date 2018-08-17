@@ -1,3 +1,7 @@
+.modify-bttns {
+  text-align: right;
+}
+
 .show-edit-bttn {
   font: normal 16px 'Open Sans', sans-serif;
   text-align: right;
@@ -26,6 +30,18 @@
   color: #c0c0c0;
 }
 
+.show-back {
+  position: absolute;
+  left: 104px;
+  top: 78px;
+  height: 48px;
+  width: 48px;
+}
+
+.show-back:hover {
+  animation: iconOpacity 1s infinite alternate;
+}
+
 .show-media {
   /* padding-top: 104px; */
   text-align: center;
@@ -36,10 +52,10 @@
 }
 
 .show-photo {
-  display: block;
+  /* display: block; */
   /* margin-left: auto;
   margin-right: auto; */
-  display: inline-block;
+  /* display: inline-block; */
   max-height: 640px;
   max-width: 1280px;
   animation-name: fadeIn;
@@ -113,9 +129,31 @@
   font-size: 36px;
 }
 
+.show-user {
+  color: black;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.show-user:hover {
+  text-decoration-line: underline;
+}
+
+.show-created {
+  text-align: right;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .show-description {
   text-align: right;
   font-size: 18px;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 300px;
 }
