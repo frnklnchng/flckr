@@ -3,6 +3,7 @@
   margin-left: 120px;
   margin-right: 120px;
   column-gap: 120px;
+  margin-bottom: 52px;
 
   -webkit-column-count: 3;
      -moz-column-count: 3;
@@ -17,6 +18,8 @@
   /* position: relative; */
   display: inline-block;
   width: 100%;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 
 .photo-index-img {
@@ -30,7 +33,7 @@
   border-top-right-radius: 5px;
   text-align: left;
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   padding: 24px;
   margin-top: 52px;

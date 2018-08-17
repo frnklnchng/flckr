@@ -55,8 +55,11 @@ class Splash extends React.Component {
           <SessionFormContainer location={this.props.location}/>
         </ReactModal>
 
-        <div className="splash-title">
-          <h1>What we see depends mainly on what we look for.</h1>
+        <div className="splash-quote">
+          <p className="splash-quote-header">Find your <text className="splash-insp">inspiration</text>.</p>
+          <p>What we see depends mainly on what we look for.</p>
+          <p>Join the Flckr community.</p>
+          <button className="splash-quote-signup" onClick={this.openModal('signup')}>Sign Up</button>
         </div>
       </div>
     );

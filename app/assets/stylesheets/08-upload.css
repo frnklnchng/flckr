@@ -1,3 +1,8 @@
+/* .upload {
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+} */
+
 .upload-background {
   position: fixed;
   background-color: rgb(33, 33, 36);
@@ -12,10 +17,12 @@
   transform: translate(-50%, -42.5%);
   padding-top: 52px;
   margin-bottom: 52px;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
 }
 
 .upload-header {
-  font: normal 32px 'Open Sans', sans-serif;
+  font: normal 32px 'Montserrat', sans-serif;
   color: white;
   padding-bottom: 20px;
 }
@@ -23,17 +30,19 @@
 .upload-preview {
   max-height: 480px;
   max-width: 960px;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
 }
 
 .upload-name {
-  font: normal 24px 'Open Sans', sans-serif;
+  font: normal 24px 'Montserrat', sans-serif;
   color: white;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .upload-title {
-  font: normal 16px 'Open Sans', sans-serif;
+  font: normal 16px 'Montserrat', sans-serif;
   width: 100%;
   height: 36px;
   border-radius: 3px;
@@ -43,7 +52,7 @@
 }
 
 .upload-description {
-  font: normal 16px 'Open Sans', sans-serif;
+  font: normal 16px 'Montserrat', sans-serif;
   width: 100%;
   height: 72px;
   border-radius: 3px;
@@ -70,7 +79,7 @@ input[type="file"] {
   height: 32px;
   width: 100px;
   color: white;
-  font: normal 16px 'Open Sans', sans-serif;
+  font: normal 16px 'Montserrat', sans-serif;
   font-weight: bold;
   cursor: pointer;
 }
@@ -81,7 +90,7 @@ input[type="file"] {
   height: 32px;
   width: 100px;
   color: black;
-  font: normal 16px 'Open Sans', sans-serif;
+  font: normal 16px 'Montserrat', sans-serif;
   font-weight: bold;
   justify-content: right;
 }

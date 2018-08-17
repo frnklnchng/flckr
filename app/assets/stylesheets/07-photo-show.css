@@ -28,17 +28,22 @@
 
 .show-media {
   /* padding-top: 104px; */
+  text-align: center;
   padding-top: 78px;
-  padding-bottom: 52px;
+  /* padding-bottom: 52px; */
+  padding-bottom: 78px;
   background-color: rgb(33, 33, 36);
 }
 
 .show-photo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: inline-block;
   max-height: 640px;
   max-width: 1280px;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 
 .show-edit-modal {
@@ -51,6 +56,8 @@
   padding: 30px;
   background: white;
   border-radius: 5px;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 
 .show-edit-title {
@@ -97,6 +104,8 @@
   padding-right: 15%;
   margin-top: 52px;
   margin-bottom: 52px;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 
 .show-title {

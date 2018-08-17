@@ -23,6 +23,10 @@
   left: 100px;
 }
 
+.nav-logo:hover {
+    animation: flicker 0.75s infinite alternate;
+}
+
 .nav-upload {
   display: inline;
   font: normal 16px 'Open Sans', sans-serif;
@@ -78,4 +82,3 @@
 .nav-signout:hover {
   color: #c0c0c0;
 }
-

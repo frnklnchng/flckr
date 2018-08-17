@@ -12,6 +12,8 @@
   height: 100vh;
   width: 100%;
   position: relative;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
 }
 
 .splash-nav {
@@ -62,12 +64,34 @@
   left: 24px;
 }
 
-.splash-title {
-  font: normal 30px 'Open Sans', sans-serif;
+.splash-logo:hover {
+    animation: flicker 0.75s infinite alternate;
+}
+
+/* .splash-insp {
+    animation: rainbow 10s infinite ease;
+} */
+
+.splash-quote {
+  font: normal 28px 'Open Sans', sans-serif;
   text-align: center;
   color: white;
-  top: 47.5%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, 0);
   position: absolute;
+}
+
+.splash-quote-header {
+  font: normal 56px 'Open Sans', sans-serif;
+}
+
+.splash-quote-signup {
+  font: normal 24px 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: 8px 32px 8px 32px;
+  background: white;
+  border: 2px solid white;
+  color: black;
+  margin-top: 12px;
 }

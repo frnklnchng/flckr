@@ -51,3 +51,24 @@ nav ul {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes flicker {
+  to { text-shadow: 0 0 30px white; }
+}
+
+@keyframes rainbow {
+	0% { color: #ff2400; }
+	12.5% {	color: #e81d1d; }
+	25% {	color: #e8b71d; }
+	37.5% {	color: #e3e81d; }
+	50% { color: #1de840; }
+	62.5% { color: #1ddde8; }
+	75% { color: #2b1de8; }
+	87.5% { color: #dd00f3; }
+	100% { color: #f30000; }
+}
