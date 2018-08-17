@@ -25,7 +25,7 @@
 
 .nav-upload {
   display: inline;
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   right: 82px;
   text-align: right;
   position: relative;
@@ -42,7 +42,7 @@
 }
 
 .nav-albums {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   right: 92px;
   text-align: right;
   position: relative;
@@ -53,7 +53,7 @@
 }
 
 .nav-name {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   right: 104px;
   text-align: right;
   position: relative;
@@ -64,7 +64,7 @@
 }
 
 .nav-signout {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   font-weight: bold;
   right: 100px;
   text-align: right;

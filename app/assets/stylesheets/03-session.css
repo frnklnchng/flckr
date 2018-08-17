@@ -1,5 +1,5 @@
 .login-form-container {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   top: 10px;
 }
 
@@ -21,7 +21,7 @@
   height: 32px;
   width: 100px;
   color: black;
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
@@ -36,11 +36,11 @@
   margin-left: 100px;
   margin-right: 100px;
   color: white;
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
 }
 
 .login-username {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   width: 100%;
   height: 36px;
   border-radius: 3px;
@@ -50,7 +50,7 @@
 }
 
 .login-password {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   width: 100%;
   height: 36px;
   border-radius: 3px;
@@ -61,7 +61,7 @@
 
 .login-firstname {
   padding-top: 12px;
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   width: 100%;
   height: 36px;
   border-radius: 3px;
@@ -71,7 +71,7 @@
 }
 
 .login-lastname {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   width: 100%;
   height: 36px;
   border-radius: 3px;
@@ -81,7 +81,7 @@
 }
 
 .login-email {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   width: 100%;
   height: 36px;
   border-radius: 3px;

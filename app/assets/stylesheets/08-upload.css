@@ -15,7 +15,7 @@
 }
 
 .upload-header {
-  font: normal 32px 'Proxima Nova', sans-serif;
+  font: normal 32px 'Open Sans', sans-serif;
   color: white;
   padding-bottom: 20px;
 }
@@ -26,14 +26,14 @@
 }
 
 .upload-name {
-  font: normal 24px 'Proxima Nova', sans-serif;
+  font: normal 24px 'Open Sans', sans-serif;
   color: white;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .upload-title {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   width: 100%;
   height: 36px;
   border-radius: 3px;
@@ -43,7 +43,7 @@
 }
 
 .upload-description {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   width: 100%;
   height: 72px;
   border-radius: 3px;
@@ -70,7 +70,7 @@ input[type="file"] {
   height: 32px;
   width: 100px;
   color: white;
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   font-weight: bold;
   cursor: pointer;
 }
@@ -81,7 +81,7 @@ input[type="file"] {
   height: 32px;
   width: 100px;
   color: black;
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   font-weight: bold;
   justify-content: right;
 }

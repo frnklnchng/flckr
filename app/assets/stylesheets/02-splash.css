@@ -27,7 +27,7 @@
 }
 
 .splash-login {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   right: 28px;
   text-align: right;
   position: relative;
@@ -38,7 +38,7 @@
 }
 
 .splash-signup {
-  font: normal 16px 'Proxima Nova', sans-serif;
+  font: normal 16px 'Open Sans', sans-serif;
   font-weight: bold;
   right: 25px;
   text-align: right;
@@ -63,7 +63,7 @@
 }
 
 .splash-title {
-  font: normal 30px 'Proxima Nova', sans-serif;
+  font: normal 30px 'Open Sans', sans-serif;
   text-align: center;
   color: white;
   top: 47.5%;
