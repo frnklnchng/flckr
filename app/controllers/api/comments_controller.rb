@@ -17,6 +17,12 @@ class Api::CommentsController < ApplicationController
 
   def update
     @comment = current_user.comments.find(params[:id])
+
+    if @comment.update(comment_params)
+      render :show
+    else
+      render json: ["How did you get here? That comment doesn't exist!"], status: 404
+    end
   end
 
   def destroy

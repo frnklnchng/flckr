@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 import { Link, withRouter } from 'react-router-dom';
+import CommentFormContainer from '../comments/comment_form_container';
 
 class PhotoShow extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class PhotoShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchPhoto(this.props.match.params.photoId);
+    ReactModal.setAppElement('body');
   }
 
   update(field) {
@@ -142,6 +144,27 @@ class PhotoShow extends React.Component {
           </div>
           <div>{modifyButtons}</div>
         </div>
+
+        <div className="comments">
+          <p>Comments</p>
+          {this.props.comments.map((comment, idx) =>
+
+            <div className="comment-container">
+              <img src={comment.user.img_url} key={comment.id} className="comment-profile-pic" />
+              <ul>
+                <div className="comment-remove">
+                  <li className="comment-user">{comment.user.username}</li>
+
+                  {this.deleteCommentButton(comment, this.props.currentUser)}
+
+                </div>
+                <li className="comment-body" key={idx}>{comment.body}</li>
+              </ul>
+            </div>
+          )}
+        </div>
+
+        <CommentFormContainer />
       </div>
     );
   }

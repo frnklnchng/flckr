@@ -4,7 +4,7 @@ import SplashContainer from './splash/splash_container';
 import PhotoIndexContainer from './photos/photo_index_container';
 import PhotoShowContainer from './photos/photo_show_container';
 import UploadFormContainer from './upload/upload_form_container';
-import AlbumFormContainer from './albums/album_form_container';
+// import AlbumFormContainer from './albums/album_form_container';
 // import SessionFormContainer from './session_form/session_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Switch } from 'react-router-dom';
