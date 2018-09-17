@@ -12,7 +12,7 @@ const mdp = (dispatch) => {
   return {
     fetchPhoto: (id) => dispatch(fetchPhoto(id)),
     fetchPhotos: () => dispatch(fetchPhotos())
-  }
+  };
 };
 
 export default connect(msp, mdp)(PhotoIndex);
