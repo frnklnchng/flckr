@@ -1,6 +1,5 @@
 import merge from 'lodash/merge';
 import {
-  RECEIVE_PHOTO,
   RECEIVE_COMMENT,
   REMOVE_COMMENT
 } from '../actions/comment_actions';

@@ -147,7 +147,7 @@ class PhotoShow extends React.Component {
 
         <div className="comments">
           <p>Comments</p>
-          {this.props.comments.map((comment, idx) =>
+          {this.props.comments.map((comment, i) =>
 
             <div className="comment-container">
               <img src={comment.user.img_url} key={comment.id} className="comment-profile-pic" />
@@ -158,7 +158,7 @@ class PhotoShow extends React.Component {
                   {this.deleteCommentButton(comment, this.props.currentUser)}
 
                 </div>
-                <li className="comment-body" key={idx}>{comment.body}</li>
+                <li className="comment-body" key={i}>{comment.body}</li>
               </ul>
             </div>
           )}

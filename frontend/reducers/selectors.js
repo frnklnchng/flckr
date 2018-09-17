@@ -1,12 +1,12 @@
-export const getComments = (commentsState, photoId) => {
-  let result = [];
-  const comments = Object.values(commentsState);
+export const getComments = (state, photoId) => {
+  let arr = [];
+  const comments = Object.values(state);
 
-  comments.forEach(comment => {
+  comments.forEach((comment) => {
     if (comment.photo_id === photoId) {
-      result.push(comment);
+      arr.push(comment);
     }
   });
-  
-  return result;
+
+  return arr;
 };
