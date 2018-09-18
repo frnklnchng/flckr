@@ -3,7 +3,7 @@ export const getComments = (state, photoId) => {
   const comments = Object.values(state);
 
   comments.forEach((comment) => {
-    if (comment.photo_id === photoId) {
+    if (comment.photo_id === parseInt(photoId)) {
       arr.push(comment);
     }
   });

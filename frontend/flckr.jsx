@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 // import * as SessionActions from './actions/session_actions'; // development
+// import * as CommentActions from './actions/comment_actions'; // development
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -26,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.signup = SessionActions.signup;
   // window.login = SessionActions.login;
   // window.logout = SessionActions.logout;
-  window.getState = store.getState;
+  // window.getState = store.getState;
+  // window.fetchComments = CommentActions.fetchComments;
   // window.dispatch = store.dispatch;
   // ------- development -----------
   

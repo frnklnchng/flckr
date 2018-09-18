@@ -26,6 +26,7 @@ class User < ApplicationRecord
 
   has_one_attached :profile
   has_many :photos
+  has_many :comments
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

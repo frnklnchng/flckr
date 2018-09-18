@@ -28,6 +28,7 @@ class PhotoShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchPhoto(this.props.match.params.photoId);
+    this.props.fetchComments(this.props.match.params.photoId);
     ReactModal.setAppElement('body');
   }
 
@@ -76,11 +77,11 @@ class PhotoShow extends React.Component {
     const day = date.getDate();
     const year = date.getFullYear();
     const months = ["January", "February",
-                        "March", "April",
-                        "May", "June",
-                        "July", "August",
-                        "September", "October",
-                        "November", "December"];
+                    "March", "April",
+                    "May", "June",
+                    "July", "August",
+                    "September", "October",
+                    "November", "December"];
     let modifyButtons;
 
     const photoEditForm = () => {
@@ -115,6 +116,20 @@ class PhotoShow extends React.Component {
       );
     };
 
+    const deleteCommentButton = (comment, currentUser) => {
+      if (this.props.photo.user_id === this.props.currentUserId || comment.user_id === this.props.currentUserId) {
+        return (
+          <button
+            onClick={() => this.props.deleteComment(comment.id)}
+            className="comment-delete">
+            Delete
+        </button>
+        );
+      } else {
+        return null;
+      }
+    }
+
     if (this.props.currentUserId === photo.user_id) {
       modifyButtons = (
         <div className="modify-bttns">
@@ -146,25 +161,19 @@ class PhotoShow extends React.Component {
         </div>
 
         <div className="comments">
-          <p>Comments</p>
-          {this.props.comments.map((comment, i) =>
-
-            <div className="comment-container">
-              <img src={comment.user.img_url} key={comment.id} className="comment-profile-pic" />
-              <ul>
-                <div className="comment-remove">
-                  <li className="comment-user">{comment.user.username}</li>
-
-                  {this.deleteCommentButton(comment, this.props.currentUser)}
-
-                </div>
-                <li className="comment-body" key={i}>{comment.body}</li>
-              </ul>
-            </div>
-          )}
+          <p className= "show-comments-header">Comments</p>
+            <ul>
+              {this.props.comments.map((comment, i) =>
+                <li className="comment-item" key={i}>
+                  <div className="comment-user">{comment.user.username}</div>
+                  {comment.body}
+                  {deleteCommentButton(comment, this.props.currentUser)}
+                </li>
+              )}
+            </ul>
+          <CommentFormContainer />
         </div>
 
-        <CommentFormContainer />
       </div>
     );
   }
