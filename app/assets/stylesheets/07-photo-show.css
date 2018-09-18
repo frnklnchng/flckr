@@ -31,7 +31,7 @@
 }
 
 .show-back {
-  position: absolute;
+  position: fixed;
   left: 104px;
   top: 78px;
   height: 48px;

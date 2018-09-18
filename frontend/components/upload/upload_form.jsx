@@ -68,7 +68,7 @@ class UploadForm extends React.Component {
       <div className="upload">
         <div className="upload-background"></div>
         <div className="upload-container">
-          <Link to="/home"><img className="upload-back" src="https://i.imgur.com/NGOSiIP.png" /></Link>
+          <Link to="/home"><img className="upload-back" src="https://raw.githubusercontent.com/frnklnchng/flckr/master/app/assets/images/circled-left.png" /></Link>
           <form className="upload-form">
             <p className="upload-header">Upload</p>
             <img className="upload-preview" src={this.state.photoUrl} />

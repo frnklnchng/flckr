@@ -24,6 +24,7 @@ class PhotoShow extends React.Component {
     this.closeModal = this.closeModal.bind(this);
     this.handleUpdate = this.handleUpdate.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.handleDeleteComment = this.handleDeleteComment.bind(this);
   }
 
   componentDidMount() {
@@ -62,6 +63,10 @@ class PhotoShow extends React.Component {
 
   handleDelete(id) {
     this.props.deletePhoto(id).then(() => this.props.history.push("/home"));
+  }
+
+  handleDeleteComment(id) {
+    this.props.deleteComment(id).then(this.setState({}));
   }
 
   render() {
@@ -116,19 +121,17 @@ class PhotoShow extends React.Component {
       );
     };
 
-    const deleteCommentButton = (comment, currentUser) => {
-      if (this.props.photo.user_id === this.props.currentUserId || comment.user_id === this.props.currentUserId) {
+    const deleteCommentButton = (comment) => {
+      if (this.props.photo.user_id === this.props.currentUserId || comment.user.id === this.props.currentUserId) {
         return (
-          <button
-            onClick={() => this.props.deleteComment(comment.id)}
-            className="comment-delete">
+          <button className="comment-delete" onClick={() => this.handleDeleteComment(comment.id)}>
             Delete
-        </button>
+          </button>
         );
-      } else {
-        return null;
       }
-    }
+
+      return null
+    };
 
     if (this.props.currentUserId === photo.user_id) {
       modifyButtons = (
@@ -141,7 +144,7 @@ class PhotoShow extends React.Component {
 
     return (
       <div className="show">
-        <Link to="/home"><img className="show-back" src="https://i.imgur.com/NGOSiIP.png"/></Link>
+        <Link to="/home"><img className="show-back" src="https://raw.githubusercontent.com/frnklnchng/flckr/master/app/assets/images/circled-left.png"/></Link>
         <div className="show-media">
           <img className="show-photo" src={`${photo.file}`} />
         </div>
@@ -167,7 +170,7 @@ class PhotoShow extends React.Component {
                 <li className="comment-item" key={i}>
                   <div className="comment-user">{comment.user.username}</div>
                   {comment.body}
-                  {deleteCommentButton(comment, this.props.currentUser)}
+                  {deleteCommentButton(comment)}
                 </li>
               )}
             </ul>
