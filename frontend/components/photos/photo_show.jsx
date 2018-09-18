@@ -66,7 +66,7 @@ class PhotoShow extends React.Component {
   }
 
   handleDeleteComment(id) {
-    this.props.deleteComment(id).then(this.setState({}));
+    this.props.deleteComment(id);
   }
 
   render() {
@@ -81,12 +81,13 @@ class PhotoShow extends React.Component {
     const month = date.getMonth();
     const day = date.getDate();
     const year = date.getFullYear();
-    const months = ["January", "February",
-                    "March", "April",
-                    "May", "June",
-                    "July", "August",
-                    "September", "October",
-                    "November", "December"];
+    const months =
+      ["January", "February",
+      "March", "April",
+      "May", "June",
+      "July", "August",
+      "September", "October",
+      "November", "December"];
     let modifyButtons;
 
     const photoEditForm = () => {
