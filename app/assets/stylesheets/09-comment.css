@@ -48,6 +48,7 @@
 
 .comment-item:hover {
   /* transition-duration: 0.05s; */
+  transition-duration: 0.1s;
   transform: scale(1.01);
   /* background-color: white; */
 }
