@@ -10,8 +10,7 @@ const msp = (state) => {
 
 const mdp = (dispatch) => {
   return {
-    createComment: (comment) => dispatch(createComment(comment)),
-    deleteComment: (id) => dispatch(deleteComment(id))
+    createComment: (comment) => dispatch(createComment(comment))
   };
 };
 
