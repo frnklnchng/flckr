@@ -126,7 +126,7 @@ class PhotoShow extends React.Component {
       if (this.props.photo.user_id === this.props.currentUserId || comment.user.id === this.props.currentUserId) {
         return (
           <button className="comment-delete" onClick={() => this.handleDeleteComment(comment.id)}>
-            Delete
+            X
           </button>
         );
       }
@@ -150,7 +150,7 @@ class PhotoShow extends React.Component {
           <img className="show-photo" src={`${photo.file}`} />
         </div>
         <div className="show-bottom">
-          <div>
+          <div className="show-bottom-left">
             <p className="show-title">{photo.title}</p>
             <Link to={`/users/${photo.user.id}`} className="show-user">
               <p className="show-user">{photo.user.first_name} {photo.user.last_name}</p>
@@ -159,25 +159,26 @@ class PhotoShow extends React.Component {
             <p className="show-created"> {day} {months[month]} {year}</p>
             <p className="show-description">{photo.description}</p>
             {photoEditModal()}
-            <hr />
+            {/* <hr /> */}
+            <div>{modifyButtons}</div>
           </div>
-          <div>{modifyButtons}</div>
+          <div className="show-bottom-right">
+            <div className="show-comments">
+              <p className="show-comments-header">Comments</p>
+              {/* <hr className="show-comment-break"/> */}
+              <CommentFormContainer />
+              <ul>
+                {this.props.comments.reverse().map((comment, i) =>
+                  <li className="comment-item" key={i}>
+                    <div className="comment-user">{comment.user.username}</div>
+                    {comment.body}
+                    {deleteCommentButton(comment)}
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div className="comments">
-          <p className= "show-comments-header">Comments</p>
-            <ul>
-              {this.props.comments.map((comment, i) =>
-                <li className="comment-item" key={i}>
-                  <div className="comment-user">{comment.user.username}</div>
-                  {comment.body}
-                  {deleteCommentButton(comment)}
-                </li>
-              )}
-            </ul>
-          <CommentFormContainer />
-        </div>
-
       </div>
     );
   }

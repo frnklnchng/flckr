@@ -29,17 +29,16 @@ class CommentForm extends React.Component {
 
   render() {
     return (
-      <div className="comment-form-container">
-        <form onSubmit={this.handleSubmit} className="comment-form">
-          <textarea className="comment-field"
-            type = "text"
-            placeholder="Add a comment"
-            onChange={this.update()}
-            value={this.state.body}
-          />
-          <input className="comment-submit" type="submit" value="Comment"></input>
-        </form>
-      </div>
+      <form onSubmit={this.handleSubmit} className="comment-form-container">
+        <textarea className="comment-form"
+          type = "text"
+          placeholder="Add a comment"
+          onChange={this.update()}
+          value={this.state.body}
+          rows="3"
+        />
+        <input className="comment-submit-bttn" type="submit" value="⏎"></input>
+      </form>
     );
   }
 }
