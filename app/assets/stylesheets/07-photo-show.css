@@ -185,7 +185,7 @@
 
 .comment-form {
   margin-right: 2px;
-  width: 450px;
+  width: 500px;
   font: inherit;
   line-height: 1.2;
   border-style: inset;
@@ -210,14 +210,19 @@
 
 .comment-item {
   display: flex;
-  width: 503px;
+  width: 548px;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.2;
 }
 
+.comment-item:hover {
+  
+}
+
 .comment-user {
+  color: #128fdc;
   padding-bottom: 5px;
 }
 
