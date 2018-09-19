@@ -34,6 +34,7 @@ class TagForm extends React.Component {
           placeholder="Add a tag"
           onChange={this.update()}
           value={this.state.label}
+          maxlength="18"
         />
       </form>
     );

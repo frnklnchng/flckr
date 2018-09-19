@@ -86,18 +86,21 @@ class SessionForm extends React.Component {
             placeholder="First Name"
             value={this.state.first_name}
             onChange={this.update('first_name')}
+            maxlength="40"
           />
           <input className="login-lastname"
             type="text"
             placeholder="Last Name"
             value={this.state.last_name}
             onChange={this.update('last_name')}
+            maxlength="40"
           />
           <input className="login-email"
             type="text"
             placeholder="Email"
             value={this.state.email}
             onChange={this.update('email')}
+            maxlength="40"
           />
         </div>
       );
@@ -118,12 +121,14 @@ class SessionForm extends React.Component {
               placeholder="Username"
               value={this.state.username}
               onChange={this.update('username')}
+              maxlength="40"
             />
             <input className="login-password"
               type="password"
               placeholder="Password"
               value={this.state.password}
               onChange={this.update('password')}
+              maxlength="40"
             />
             {this.renderErrors()}
             <button className="submit-bttn" onClick={this.handleSubmit}>{bttntype}</button>

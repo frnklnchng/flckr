@@ -72,6 +72,10 @@ class PhotoShow extends React.Component {
     this.props.deleteComment(id);
   }
 
+  handleDeleteTag(id) {
+    this.props.deleteTag(id);
+  }
+
   handleImageLoaded() {
     // console.log("loaded");
     this.setState({ loaded: true });
@@ -133,13 +137,21 @@ class PhotoShow extends React.Component {
     const deleteCommentButton = (comment) => {
       if (this.props.photo.user_id === this.props.currentUserId || comment.user.id === this.props.currentUserId) {
         return (
-          <button className="comment-delete" onClick={() => this.handleDeleteComment(comment.id)}>
-            ✕
-          </button>
+          <a className="comment-delete" onClick={() => this.handleDeleteComment(comment.id)}>✕</a>
         );
       }
 
-      return null
+      return null;
+    };
+
+    const deleteTagButton = (tag) => {
+      if (this.props.photo.user_id === this.props.currentUserId) {
+        return (
+          <a className="tag-delete" onClick={() => this.handleDeleteTag(tag.id)}>✕&nbsp;&nbsp;</a>
+        );
+      }
+
+      return null;
     };
 
     if (this.props.currentUserId === photo.user_id) {
@@ -168,8 +180,19 @@ class PhotoShow extends React.Component {
             <p className="show-created"> {day} {months[month]} {year}</p>
             <p className="show-description">{photo.description}</p>
             {photoEditModal()}
-            {/* <hr /> */}
+            <hr />
             <div>{modifyButtons}</div>
+            <div className="show-tags">
+              <p className="show-tags-header">Tags</p>
+              <TagFormContainer />
+              <ul className="show-tags-container">
+                {this.props.tags.map((tag, i) =>
+                  <li className="tag-item" key={i}>
+                    {deleteTagButton(tag)}{tag.label}
+                  </li>
+                )}
+              </ul>
+            </div>
           </div>
           <div className="show-bottom-right">
             <div className="show-comments">
@@ -187,19 +210,6 @@ class PhotoShow extends React.Component {
                   </li>
                 )}
               </ul>
-            </div>
-
-            <div className="tag-wrapper">
-              <strong>Tags</strong>
-              <div className="tag-container">
-                {this.props.tags.map(tag =>
-                  <div className="tag-show">
-                    <p key={tag.id} className="tag">{tag.label}</p>
-                    {/* {this.deleteTagButton(tag, this.props.currentUser)} */}
-                  </div>
-                )}
-              </div>
-              <TagFormContainer />
             </div>
           </div>
         </div>

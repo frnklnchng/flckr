@@ -1,0 +1,56 @@
+/* .show-tags {
+  
+} */
+
+.show-tags-header {
+  /* font-size: 20px; */
+  padding-top: 46px;
+}
+
+.tag-form-container {
+  /* display: flex; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
+}
+
+.tag-form {
+  font: inherit;
+  font-size: 14px;
+  width: 148px;
+  border-style: inset;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.show-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-item {
+  color: black;
+  background-color: #c0c0c0;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 4px 6px 4px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.tag-item:hover {
+  color: white;
+  background-color: #707070;
+  cursor: pointer;
+}
+
+.tag-delete {
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.tag-delete:hover {
+  color: red;
+}
