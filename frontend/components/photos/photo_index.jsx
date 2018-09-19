@@ -9,11 +9,11 @@ class PhotoIndex extends React.Component {
   }
 
   render() {
-    let items;
+    let items = null;
 
     if (this.props.photos) {
       items = this.props.photos.reverse().map(photo => {
-        return <PhotoIndexItem key={photo.id} photo={ photo }/>
+        return <PhotoIndexItem key={photo.id} photo={ photo } loaded={ false } />
       });
     }
 
