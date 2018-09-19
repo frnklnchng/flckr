@@ -20,7 +20,7 @@ class PhotoIndexItem extends React.Component {
       <div className="photo-index-item">
         <Link to={`/photos/${photo.id}`}>
           <img className="photo-index-img" src={photo.file} onLoad={this.handleImageLoaded}
-            style={!this.state.loaded ? { visibility: 'hidden' } : {}} />
+            style={!this.state.loaded ? { opacity: 0 } : {}} />
         </Link>
         <div className="piii-header">
           <div className="piii-header-title">{photo.title}</div>

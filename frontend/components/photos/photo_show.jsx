@@ -25,6 +25,7 @@ class PhotoShow extends React.Component {
     this.handleUpdate = this.handleUpdate.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.handleDeleteComment = this.handleDeleteComment.bind(this);
+    this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
 
   componentDidMount() {
@@ -67,6 +68,11 @@ class PhotoShow extends React.Component {
 
   handleDeleteComment(id) {
     this.props.deleteComment(id);
+  }
+
+  handleImageLoaded() {
+    // console.log("loaded");
+    this.setState({ loaded: true });
   }
 
   render() {
@@ -147,7 +153,8 @@ class PhotoShow extends React.Component {
       <div className="show">
         <Link to="/home"><img className="show-back" src="https://raw.githubusercontent.com/frnklnchng/flckr/master/app/assets/images/circled-left.png"/></Link>
         <div className="show-media">
-          <img className="show-photo" src={`${photo.file}`} />
+          <img className="show-photo" src={`${photo.file}`} onLoad={this.handleImageLoaded}
+            style={!this.state.loaded ? { opacity: 0 } : {}} />
         </div>
         <div className="show-bottom">
           <div className="show-bottom-left">
