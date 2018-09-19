@@ -24,7 +24,7 @@
 }
 
 .nav-logo:hover {
-    animation: flicker 0.75s infinite alternate;
+  animation: flicker 0.75s infinite alternate;
 }
 
 .nav-upload {

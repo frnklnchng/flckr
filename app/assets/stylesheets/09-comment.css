@@ -1,6 +1,6 @@
-/* .show-comments {
-  
-} */
+.show-comments {
+  /* overflow: visible; */
+}
 
 .show-comments-header {
   font-size: 20px;
@@ -47,7 +47,9 @@
 }
 
 .comment-item:hover {
-  
+  /* transition-duration: 0.05s; */
+  transform: scale(1.01);
+  /* background-color: white; */
 }
 
 .comment-user {
