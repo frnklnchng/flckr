@@ -2,6 +2,7 @@ import React from 'react';
 import ReactModal from 'react-modal';
 import { Link, withRouter } from 'react-router-dom';
 import CommentFormContainer from '../comments/comment_form_container';
+import TagFormContainer from '../tags/tag_form_container';
 
 class PhotoShow extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class PhotoShow extends React.Component {
   componentDidMount() {
     this.props.fetchPhoto(this.props.match.params.photoId);
     this.props.fetchComments(this.props.match.params.photoId);
+    this.props.fetchTags(this.props.match.params.photoId);
     ReactModal.setAppElement('body');
   }
 
@@ -185,6 +187,19 @@ class PhotoShow extends React.Component {
                   </li>
                 )}
               </ul>
+            </div>
+
+            <div className="tag-wrapper">
+              <strong>Tags</strong>
+              <div className="tag-container">
+                {this.props.tags.map(tag =>
+                  <div className="tag-show">
+                    <p key={tag.id} className="tag">{tag.label}</p>
+                    {/* {this.deleteTagButton(tag, this.props.currentUser)} */}
+                  </div>
+                )}
+              </div>
+              <TagFormContainer />
             </div>
           </div>
         </div>

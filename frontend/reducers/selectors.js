@@ -10,3 +10,16 @@ export const getComments = (state, photoId) => {
 
   return arr;
 };
+
+export const getTags = (state, photoId) => {
+  let arr = [];
+  const tags = Object.values(state);
+
+  tags.forEach((tag) => {
+    if (tag.photo_id === parseInt(photoId)) {
+      arr.push(tag);
+    }
+  });
+  
+  return arr;
+};
