@@ -126,7 +126,7 @@ class PhotoShow extends React.Component {
       if (this.props.photo.user_id === this.props.currentUserId || comment.user.id === this.props.currentUserId) {
         return (
           <button className="comment-delete" onClick={() => this.handleDeleteComment(comment.id)}>
-            X
+            ✕
           </button>
         );
       }
@@ -164,14 +164,16 @@ class PhotoShow extends React.Component {
           </div>
           <div className="show-bottom-right">
             <div className="show-comments">
-              <p className="show-comments-header">Comments</p>
+              <p className="show-comments-header">Comments ({this.props.comments.length})</p>
               {/* <hr className="show-comment-break"/> */}
               <CommentFormContainer />
               <ul>
                 {this.props.comments.reverse().map((comment, i) =>
                   <li className="comment-item" key={i}>
-                    <div className="comment-user">{comment.user.username}</div>
-                    {comment.body}
+                    <div className="comment-main">
+                      <div className="comment-user">{comment.user.username}</div>
+                      <div className="comment-body">{comment.body}</div>
+                    </div>
                     {deleteCommentButton(comment)}
                   </li>
                 )}

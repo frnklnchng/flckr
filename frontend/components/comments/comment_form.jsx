@@ -32,7 +32,7 @@ class CommentForm extends React.Component {
       <form onSubmit={this.handleSubmit} className="comment-form-container">
         <textarea className="comment-form"
           type = "text"
-          placeholder="Add a comment"
+          placeholder="Type a comment"
           onChange={this.update()}
           value={this.state.body}
           rows="3"

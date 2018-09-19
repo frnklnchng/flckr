@@ -131,7 +131,7 @@
 
 .show-bottom-right {
   padding-left: 52px;
-  width: 700px;
+  width: 600px;
 }
 
 .show-title {
@@ -209,6 +209,9 @@
 }
 
 .comment-item {
+  display: flex;
+  width: 503px;
+  justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.2;
@@ -216,4 +219,17 @@
 
 .comment-user {
   padding-bottom: 5px;
+}
+
+.comment-body {
+  word-wrap: break-word;
+}
+
+.comment-delete {
+  align-self: flex-start;
+  font: normal 18px 'Open Sans', sans-serif;
+  padding: 0px 0px 0px 0px;
+  background: #f3f5f6;
+  border: 1px solid #f3f5f6;
+  color: #c0c0c0;
 }
