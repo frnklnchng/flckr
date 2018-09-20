@@ -5,14 +5,25 @@
   /* column-gap: 120px; */
   column-gap: 52px;
   margin-bottom: 52px;
-
+  
   -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-          
+  -moz-column-count: 3;
+  column-count: 3;
+  
   -webkit-column-width: 200px;
-     -moz-column-width: 200px;
-          column-width: 200px;
+  -moz-column-width: 200px;
+  column-width: 200px;
+}
+
+.photo-index-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-index-preload {
+  display: none;
 }
 
 .photo-index-item {
