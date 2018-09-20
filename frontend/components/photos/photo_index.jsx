@@ -31,7 +31,8 @@ class PhotoIndex extends React.Component {
     else {
       items = 
         <div className="photo-index-loading">
-          <ScaleLoader height={105} width={12} margin={"6px"}/>
+          <ScaleLoader height={70} width={8} margin={"4px"}/>
+          {/* <ScaleLoader height={105} width={12} margin={"6px"}/> */}
           {/* <DotLoader size={80}/> */}
           {/* <ClimbingBoxLoader size={30}/> */}
           {/* <BarLoader height={8} width={300}/> */}
