@@ -183,8 +183,10 @@ class PhotoShow extends React.Component {
             <hr />
             <div>{modifyButtons}</div>
             <div className="show-tags">
-              <p className="show-tags-header">Tags</p>
-              <TagFormContainer />
+              <div className="show-tags-bar">
+                <p className="show-tags-header">Tags</p>
+                <TagFormContainer />
+              </div>
               <ul className="show-tags-container">
                 {this.props.tags.map((tag, i) =>
                   <li className="tag-item" key={i}>
