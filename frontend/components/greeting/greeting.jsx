@@ -20,9 +20,9 @@ const Greeting = ({ currentUser, logout }) => {
           {/* <div className="nav-upload"><img className="nav-upload-icon" src="../../../app/assets/images/upload.png" alt="Upload"></img></div> */}
           <div className="nav-upload"><img className="nav-upload-icon" src="https://raw.githubusercontent.com/frnklnchng/flckr/master/app/assets/images/upload.png" alt="Upload"></img></div>
         </Link>
-        <Link to="/albums">
+        {/* <Link to="/albums">
           <button className="nav-albums">Albums</button>
-        </Link>
+        </Link> */}
         <span className="nav-name">
           Hi, {currentUser.username}!
         </span>

@@ -30,7 +30,8 @@
 .nav-upload {
   display: inline;
   font: normal 16px 'Open Sans', sans-serif;
-  right: 82px;
+  /* right: 82px; */
+  right: 92px;
   text-align: right;
   position: relative;
   padding: 4px 16px 4px 16px;
