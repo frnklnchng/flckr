@@ -34,6 +34,7 @@ class PhotoShow extends React.Component {
     this.props.fetchComments(this.props.match.params.photoId);
     this.props.fetchTags(this.props.match.params.photoId);
     ReactModal.setAppElement('body');
+    // window.scrollTo(0, 0);
   }
 
   update(field) {
