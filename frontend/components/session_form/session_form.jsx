@@ -39,8 +39,9 @@ class SessionForm extends React.Component {
 
     if (this.props.formType === "signup") {
       this.props.demo(demo);
+      return;
     }
-
+    
     const interval = setInterval(() => {
       if (demoUser.length) {
         this.setState({
@@ -54,7 +55,7 @@ class SessionForm extends React.Component {
       }
       else {
         clearInterval(interval);
-        this.props.demo ? this.props.demo(demo) : this.props.processForm(demo);
+        this.props.demo(demo);
       }
     }, 100);
   }
@@ -65,10 +66,6 @@ class SessionForm extends React.Component {
 
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClick, false);
-
-    // if (this.props.errors && this.props.errors.length) {
-    //   this.props.clearErrors();
-    // }
   }
 
   handleClick(e) {
