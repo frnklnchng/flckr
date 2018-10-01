@@ -12,6 +12,7 @@ This project was created within timeframe of under two weeks, and I fully expect
   * Cloud storage was achieved through AWS S3 and Rails' own Active Storage
   * The home feed features an adaptable layout that accomodates images of all sizes
   * The application features smooth transitions and other enhancements for a great user experience.
+  * Users are able to leave comments and add tags.
 
 ### Creating and editing photos
 
@@ -73,7 +74,5 @@ In addition to the included packages and gems, AWS S3 was used for file hosting.
 
 ## Possible future features
   * Albums
-  * Comments
-  * Tags
   * Search
   * Live feed
