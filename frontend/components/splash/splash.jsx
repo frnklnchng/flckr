@@ -21,8 +21,12 @@ class Splash extends React.Component {
     this.closeModal();
   }
 
-  openModal(formType) {
+  componentWillUpdate() {
     this.props.clearErrors();
+  }
+
+  openModal(formType) {
+    // this.props.clearErrors();
     
     return () => {
       this.setState({ showModal: true });

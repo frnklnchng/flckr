@@ -15,7 +15,7 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemo = this.handleDemo.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    this.capitalize = this.capitalize.bind(this);
+    // this.capitalize = this.capitalize.bind(this);
   }
 
   update(field) {
@@ -38,11 +38,10 @@ class SessionForm extends React.Component {
     const demoPass = demo.password.split('');
 
     if (this.props.formType === "signup") {
-      this.props.demo(demo);
-      return;
+      this.props.history.push("/login");
     }
     
-    const interval = setInterval(() => {
+    const ghost = setInterval(() => {
       if (demoUser.length) {
         this.setState({
           username: this.state.username + demoUser.shift()
@@ -54,10 +53,10 @@ class SessionForm extends React.Component {
         });
       }
       else {
-        clearInterval(interval);
+        clearInterval(ghost);
         this.props.demo(demo);
       }
-    }, 100);
+    }, 95);
   }
 
   componentWillMount() {
@@ -88,13 +87,9 @@ class SessionForm extends React.Component {
     );
   }
 
-  capitalize(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
-  capitalize(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+  // capitalize(string) {
+  //   return string.charAt(0).toUpperCase() + string.slice(1);
+  // }
 
   render() {
     const extendedForm = () => {
