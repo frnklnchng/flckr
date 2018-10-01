@@ -16,6 +16,7 @@
     "react-modal": "^3.5.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-router-scroll-4": "^1.0.0-beta.2",
     "react-spinners": "^0.4.5",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
