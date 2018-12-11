@@ -174,10 +174,10 @@ class PhotoShow extends React.Component {
         <div className="show-bottom">
           <div className="show-bottom-left">
             <p className="show-title">{photo.title}</p>
-            <Link to={`/users/${photo.user.id}`} className="show-user">
+            {/* <Link to={`/users/${photo.user.id}`} className="show-user">
               <p className="show-user">{photo.user.first_name} {photo.user.last_name}</p>
-            </Link>
-            {/* <p className="show-user">{photo.user.first_name} {photo.user.last_name}</p> */}
+            </Link> */}
+            <p className="show-user">{photo.user.first_name} {photo.user.last_name}</p>
             <p className="show-created"> {day} {months[month]} {year}</p>
             <p className="show-description">{photo.description}</p>
             {photoEditModal()}

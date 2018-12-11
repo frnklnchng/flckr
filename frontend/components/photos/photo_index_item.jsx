@@ -25,8 +25,8 @@ class PhotoIndexItem extends React.Component {
         </Link>
         <div className="piii-header">
           <div className="piii-header-title">{photo.title}</div>
-          by&nbsp;
-          <Link to={`/users/${photo.user.id}`}>{photo.user.username}</Link>
+          by&nbsp;{photo.user.username}
+          {/* <Link to={`/users/${photo.user.id}`}>{photo.user.username}</Link> */}
         </div>
       </div>
     );
