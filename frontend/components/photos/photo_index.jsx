@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoIndexItem from './photo_index_item'
+import PhotoIndexItem from './photo_index_item';
 import { withRouter } from 'react-router-dom';
 import { ScaleLoader, DotLoader, ClimbingBoxLoader, BarLoader } from 'react-spinners';
 
