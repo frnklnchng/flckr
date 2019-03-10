@@ -10,7 +10,8 @@ class UploadForm extends React.Component {
       userId: this.props.currentUserId,
       photo: null,
       photoUrl: "",
-      fileName: ""
+      fileName: "",
+      disableBttn: false
     };
     this.handleFile = this.handleFile.bind(this);
     this.handleUpload = this.handleUpload.bind(this);
@@ -39,6 +40,12 @@ class UploadForm extends React.Component {
   }
 
   handleUpload(e) {
+    if (this.state.disableBttn) {
+      return;
+    }
+
+    this.setState({ disableBttn: true });
+
     e.preventDefault();
 
     const formData = new FormData();
@@ -88,7 +95,7 @@ class UploadForm extends React.Component {
             <div className="upload-bttns">
               <input type="file" name="upload-file-input" id="upload-file-input" accept="image/*" onChange={this.handleFile}></input>
               <label className="upload-file" htmlFor="upload-file-input">Browse</label>
-              <button className="upload-submit-bttn" onClick={this.handleUpload}>Submit</button>
+              <button className="upload-submit-bttn" disabled={this.state.disableBttn} onClick={this.handleUpload}>{this.state.disableBttn ? 'Loading' : 'Submit'}</button>
             </div>
           </form>
         </div>
