@@ -72,7 +72,7 @@ In addition to the included packages and gems, AWS S3 was used for file hosting.
   * [API](https://github.com/frnklnchng/flckr/wiki/Backend-Routes)
   * [Database Schema](https://github.com/frnklnchng/flckr/wiki/Schema)
 
-## Possible future features
+## Planned features
   * Albums
   * Search
   * Live feed
